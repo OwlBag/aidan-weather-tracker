@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #5E239D;
+    --secondary-color: #8760b9;
+    --tertiary-color: #481a9c;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --bg-color: #f2e2ff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border: 1px dotted red; */
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* HEADER STYLES */
+header {
+    background: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 10%;
+    z-index: 9999;
+}
+
+header h1 {
+    font-size: 40px;
+    padding: 20px 40px;
+    color: white;
+    text-shadow: 5px 5px 2px var(--shadow-color);
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    vertical-align: middle;
+}
+
+header nav ul li {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    background: var(--secondary-color);   
+}
+
+header nav ul li:hover {
+    background: var(--tertiary-color);   
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* SECTION STYLES */
+section {
+    margin: 30px;
+    display: flex;
+}
+
+section .section-title {
+    flex: 20%;
+    margin: 10px;
+    padding: 10px;
+    color: var(--tertiary-color);
+    border-right: 5px solid var(--tertiary-color);
+    text-align: right;
+    font-size: 30px;
+}
+
+.section-content {
+    flex: 90%;
+}
+
+.section-content > * {
+    width: 80%;
+    left: 5%;
+    position: relative;
+}
+
+button {
+    width: 150px;
+    height: 25px;
+}
